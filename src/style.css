@@ -1,0 +1,470 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+:root{font-family:'Space Grotesk',sans-serif;color:#f2f0ec;background:#0b0b0d;font-synthesis:none;text-rendering:optimizeLegibility;--bg:#0b0b0d;--panel:#121214;--line:#2b2a2d;--muted:#a09da3;--lime:#397DFF;--white:#f4f1eb}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--bg)}button,input,textarea,select{font:inherit}button,a,select{ -webkit-tap-highlight-color:transparent}button{color:inherit;cursor:pointer}a{color:inherit;text-decoration:none}.topline{height:29px;border-bottom:1px solid #29282a;display:flex;align-items:center;justify-content:space-between;padding:0 5.2%;font:9px 'DM Mono',monospace;letter-spacing:.13em;color:#a8a5a9}.header{height:76px;padding:0 5.2%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10;background:#0b0b0df2;backdrop-filter:blur(15px)}.logo{font-size:30px;font-weight:700;letter-spacing:-.12em;transform:skew(-9deg);display:inline-block}.logo span{font:10px 'DM Mono';vertical-align:top;letter-spacing:0;margin-left:5px;color:var(--lime)}.nav{display:flex;gap:31px}.nav button,.headerActions button,.footerBottom button{border:0;background:none;font-size:12px;color:#c8c5ca}.nav button:hover,.footerBottom button:hover{color:var(--lime)}.headerActions{display:flex;align-items:center;gap:19px}.headerActions button{display:flex;align-items:center;gap:8px}.lang{font:11px 'DM Mono'!important}.cartButton span{font:11px 'DM Mono';border:1px solid #555;border-radius:50%;width:20px;height:20px;display:grid;place-items:center}.menuButton{display:none!important}.hero{min-height:580px;position:relative;display:flex;align-items:center;padding:70px 8%;overflow:hidden;background:linear-gradient(90deg,#0b0b0d 0%,#0b0b0ddd 42%,#0b0b0d35 100%),url('https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?auto=format&fit=crop&w=1800&q=85') center 52%/cover no-repeat}.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,var(--bg),transparent 18%,transparent 78%,#0b0b0d66);pointer-events:none}.heroContent{position:relative;z-index:1;max-width:690px}.eyebrow{font:10px 'DM Mono',monospace;letter-spacing:.18em;color:var(--lime);margin:0 0 18px}.hero h1{font-size:clamp(46px,7vw,91px);line-height:.91;letter-spacing:-.075em;margin:0 0 24px;font-weight:700;white-space:normal}.heroSub{font-size:16px;color:#c4c0c5;max-width:420px;line-height:1.6;margin-bottom:30px}.primary,.secondary{min-height:46px;padding:0 19px;display:inline-flex;align-items:center;justify-content:center;gap:18px;border:1px solid var(--lime);background:var(--lime);color:#12130b;font-size:12px;font-weight:700;transition:.2s}.primary:hover{background:#e6ff89;transform:translateY(-1px)}.secondary{background:transparent;color:var(--white);border-color:#555}.secondary:hover{border-color:var(--lime);color:var(--lime)}.heroMeta{display:flex;gap:22px;margin-top:40px;flex-wrap:wrap}.heroMeta span{display:flex;align-items:center;gap:7px;color:#d0cdd1;font-size:10px}.heroMeta svg{color:var(--lime)}.heroContent>small{display:block;color:#8e8b90;font-size:9px;margin-top:10px}.heroStamp{position:absolute;z-index:1;right:7%;bottom:14%;width:116px;height:116px;border:1px solid #ffffff66;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:30px;font-weight:700;letter-spacing:-.1em;transform:rotate(12deg)}.heroStamp span,.heroStamp b{font:8px 'DM Mono';letter-spacing:.15em}.heroStamp b{font-size:7px;color:var(--lime);margin-top:8px}.ticker{overflow:hidden;border-block:1px solid #343338;background:var(--lime);color:#12130b;padding:13px 0;white-space:nowrap;font-weight:700;letter-spacing:.07em;font-size:13px}.ticker div{word-spacing:12px;animation:marquee 24s linear infinite}@keyframes marquee{to{transform:translateX(-20%)}}.ticker i{font-style:normal;margin:0 17px}.section{padding:90px 7.2%}.sectionHead{display:flex;align-items:end;justify-content:space-between;margin-bottom:33px}.sectionHead h2,.contactSection h2,.manifesto h2{font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.06em;margin:0 0 10px}.muted{font-size:13px;color:var(--muted);margin:0;line-height:1.6}.catalogCount{font:24px 'DM Mono';color:var(--lime)}.catalogCount span{font-size:9px;color:var(--muted);letter-spacing:.1em}.filters{display:flex;align-items:center;gap:17px;flex-wrap:wrap;margin-bottom:28px}.searchBox{height:43px;display:flex;align-items:center;gap:10px;border:1px solid #343338;padding:0 13px;min-width:220px;flex:1;color:#aaa}.searchBox input{background:transparent;border:0;outline:0;color:white;width:100%;font-size:12px}.searchBox button{background:none;border:0;display:flex}.genreFilters{display:flex;gap:5px}.genreFilters button{background:transparent;border:1px solid #343338;color:#aaa;padding:12px 14px;font-size:11px}.genreFilters button.active,.genreFilters button:hover{border-color:var(--lime);color:var(--lime)}.filters select,.licenseQuick select{background:#141416;color:#d2cfd2;border:1px solid #343338;padding:12px;font-size:11px;outline:none}.beatGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:34px 18px}.beatCard{min-width:0}.cover{aspect-ratio:1/1;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;background:#202024}.cover:before{content:"";position:absolute;inset:0;background:linear-gradient(135deg,#ffffff0b,#00000099)}.cover:after{content:"";position:absolute;width:68%;height:68%;border:1px solid #ffffff35;border-radius:50%;box-shadow:0 0 0 18px #ffffff08,0 0 0 48px #ffffff06}.art1{background:radial-gradient(ellipse at 75% 18%,#9a7c79 0,transparent 26%),linear-gradient(145deg,#373438,#101013 50%,#524344)}.art2{background:radial-gradient(ellipse at 20% 30%,#c25d47 0,transparent 28%),linear-gradient(140deg,#4b2529,#131417 60%,#6a5038)}.art3{background:radial-gradient(ellipse at 80% 20%,#565b76 0,transparent 24%),linear-gradient(145deg,#171923,#090a0d 60%,#464650)}.art4{background:radial-gradient(ellipse at 55% 25%,#bc8b6c 0,transparent 26%),linear-gradient(145deg,#483329,#171313 58%,#6b4c42)}.art5{background:radial-gradient(ellipse at 25% 30%,#9a5c6c 0,transparent 28%),linear-gradient(145deg,#35202c,#100f13 60%,#65464d)}.art6{background:radial-gradient(ellipse at 70% 20%,#5e6e65 0,transparent 28%),linear-gradient(145deg,#202923,#0b0e0d 55%,#47534a)}.coverIndex,.coverGenre{position:absolute;z-index:1;font:9px 'DM Mono';letter-spacing:.12em;color:#e2dfe2}.coverIndex{top:15px;left:15px}.coverGenre{top:15px;right:15px;color:var(--lime)}.coverTitle{position:absolute;z-index:1;bottom:17px;left:18px;font-size:clamp(19px,2.3vw,31px);font-weight:700;letter-spacing:-.06em}.playButton{position:absolute;z-index:2;width:48px;height:48px;border-radius:50%;border:1px solid #ffffffaa;background:#0a0a0b88;display:grid;place-items:center;backdrop-filter:blur(8px);transition:.2s}.playButton:hover{background:var(--lime);color:#111;border-color:var(--lime)}.beatInfo{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:14px 1px 10px}.beatInfo h3{margin:0 0 6px;font-size:13px;letter-spacing:.02em}.beatInfo p{margin:0;color:#969198;font:10px 'DM Mono'}.beatInfo p span{color:var(--lime)}.beatInfo strong{font:12px 'DM Mono';white-space:nowrap}.beatBottom{display:flex;justify-content:space-between;align-items:center;border-top:1px solid #2c2b2f;padding-top:11px;color:#99969c;font-size:10px}.beatBottom button{background:transparent;border:0;color:var(--lime);display:flex;align-items:center;gap:6px;font-size:10px}.licenseQuick{display:flex;justify-content:space-between;align-items:center;margin-top:12px;gap:8px}.licenseQuick select{padding:8px;max-width:58%;font-size:9px}.licenseQuick button{border:0;background:none;color:#aaa;font-size:10px}.licenseQuick button:hover{color:var(--lime)}.empty{padding:55px;text-align:center;color:var(--muted);border:1px dashed #333}.manifesto{display:grid;grid-template-columns:1fr 1.5fr .7fr;gap:35px;align-items:center;padding:75px 7.2%;border-block:1px solid var(--line);background:#111113}.manifestoMark{font-size:clamp(60px,10vw,120px);font-weight:700;letter-spacing:-.14em;color:var(--lime)}.manifestoMark span{color:#f2f0ec}.manifesto h2{max-width:430px}.manifesto p:not(.eyebrow){max-width:460px;font-size:14px;line-height:1.8;color:#aaa6ad}.manifestoSide{justify-self:end;font-size:clamp(21px,3vw,35px);font-weight:700;line-height:1.02;letter-spacing:-.07em;text-align:right}.manifestoSide em{font-style:normal;color:var(--lime)}.licenseSection{background:#0e0e10}.licenseGrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.licenseCard{padding:21px 18px;border:1px solid #333237;background:#111113;position:relative;display:flex;flex-direction:column;min-height:350px}.licenseCard.popular{border-color:var(--lime);background:linear-gradient(155deg,#24271a,#111113 48%)}.licenseTop{display:flex;justify-content:space-between;align-items:center;font:9px 'DM Mono';color:#aaa;letter-spacing:.07em}.licenseTop b{font-size:8px;background:var(--lime);color:#111;padding:5px 6px}.licenseCard h3{font-size:16px;margin:28px 0 10px;letter-spacing:-.03em}.licensePrice{font:clamp(22px,2.4vw,30px) 'DM Mono';letter-spacing:-.08em;padding-bottom:20px;border-bottom:1px solid #343338;white-space:nowrap}.licenseCard ul{list-style:none;margin:20px 0 25px;padding:0;display:grid;gap:13px;flex:1}.licenseCard li{display:flex;gap:9px;font-size:11px;color:#c0bdc2;line-height:1.4}.licenseCard li span{color:var(--lime)}.licenseCard .primary,.licenseCard .secondary{width:100%;padding:0 10px;gap:9px;font-size:10px}.licenseFine{font-size:9px;color:#77737a;line-height:1.5;margin:12px 0 0}.legalNote{font-size:10px;line-height:1.6;color:#77737a;margin-top:20px;max-width:850px}.contactSection{padding:85px 7.2%;display:grid;grid-template-columns:1fr .85fr;gap:12%;border-top:1px solid var(--line);background:linear-gradient(120deg,#171719,#0b0b0d)}.contactSection h2{max-width:450px;margin-bottom:16px}.contactSection form{display:grid;gap:18px}.contactSection label{display:grid;gap:8px;font:10px 'DM Mono';color:#b9b5bc}.contactSection input,.contactSection textarea{background:#101012;border:1px solid #343338;color:#f5f2ed;padding:14px;outline:none;resize:vertical;font:12px 'Space Grotesk'}.contactSection input:focus,.contactSection textarea:focus{border-color:var(--lime)}.contactSection form .primary{justify-self:start}.contactSection form small{font-size:9px;color:#77737a}.footer{padding:38px 7.2% 18px;border-top:1px solid #303034}.footer>p{color:#aaa;font-size:11px}.socials{display:flex;gap:17px;margin:22px 0 32px}.socials a{color:#aaa}.socials a:hover{color:var(--lime)}.footerBottom{border-top:1px solid #303034;padding-top:17px;display:flex;justify-content:space-between;gap:12px;color:#7e7b81;font:9px 'DM Mono'}.footerBottom button{font:9px 'DM Mono';padding:0}.overlay{position:fixed;inset:0;background:#000b;z-index:30;display:flex;justify-content:flex-end}.cartDrawer{width:min(480px,100%);height:100%;background:#101012;border-left:1px solid #3a393e;padding:27px;display:flex;flex-direction:column;overflow:auto;box-shadow:-20px 0 80px #0008}.drawerHead{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #343338;padding-bottom:22px}.drawerHead .eyebrow{margin-bottom:8px}.drawerHead h2{margin:0;font-size:27px;letter-spacing:-.05em}.drawerHead h2 span{font:12px 'DM Mono';color:#aaa}.drawerHead>button{border:1px solid #343338;background:transparent;padding:9px;display:grid;place-items:center}.cartEmpty{margin:auto;display:flex;align-items:center;flex-direction:column;gap:15px;color:#aaa;text-align:center}.cartEmpty svg{color:var(--lime)}.cartEmpty p{font-size:13px}.cartItems{display:grid;gap:0}.cartItem{display:flex;align-items:center;gap:13px;padding:17px 0;border-bottom:1px solid #2e2d31}.miniCover{width:48px;height:48px;display:grid;place-items:center;background:linear-gradient(135deg,#39323a,#151519);color:var(--lime)}.cartItemInfo{display:grid;gap:5px;flex:1}.cartItemInfo strong{font-size:12px}.cartItemInfo span,.cartItemInfo button{font-size:10px;color:#aaa}.cartItemInfo button{justify-self:start;background:none;border:0;padding:0;text-decoration:underline}.cartItem>b{font:11px 'DM Mono'}.cartTotal{display:flex;justify-content:space-between;padding:22px 0;margin-top:auto;font-size:13px}.cartTotal strong{font:17px 'DM Mono';color:var(--lime)}.payNote{background:#202016;border:1px solid #464627;color:#d2d2a6;padding:13px;font-size:11px;line-height:1.6}.full{width:100%}.full:disabled{opacity:.45;cursor:not-allowed}
+@media(max-width:900px){.nav{gap:14px}.nav button{font-size:11px}.hero{min-height:520px;padding:65px 7%}.heroStamp{right:5%;bottom:9%;width:90px;height:90px;font-size:24px}.section{padding:70px 5%}.beatGrid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 15px}.licenseGrid{grid-template-columns:repeat(2,minmax(0,1fr))}.manifesto{padding:60px 5%;grid-template-columns:.7fr 1.5fr}.manifestoSide{display:none}.contactSection{padding:70px 5%;gap:7%}.topline{padding-inline:5%}}
+@media(max-width:620px){.topline{height:25px;font-size:7px}.topline span:nth-child(2){display:none}.header{height:65px;padding:0 5%}.logo{font-size:27px}.menuButton{display:flex!important}.nav{display:none;position:absolute;top:64px;left:0;right:0;padding:20px 5%;background:#101012;border-bottom:1px solid #333;flex-direction:column;gap:0}.nav.open{display:flex}.nav button{text-align:left;padding:14px 0;border-bottom:1px solid #242326}.headerActions{gap:14px}.hero{min-height:560px;padding:62px 6%;background-position:58% center}.hero h1{font-size:clamp(45px,12vw,67px)}.heroSub{font-size:14px;max-width:330px}.heroStamp{width:75px;height:75px;font-size:20px;right:6%;bottom:7%}.heroMeta{gap:12px;margin-top:28px;max-width:280px}.heroMeta span{font-size:9px}.section{padding:58px 5%}.sectionHead{align-items:start}.sectionHead h2,.contactSection h2,.manifesto h2{font-size:33px}.catalogCount{font-size:19px}.filters{gap:10px}.searchBox{flex-basis:100%}.genreFilters{flex:1;gap:4px}.genreFilters button{padding:10px 11px;font-size:10px}.filters select{padding:10px;max-width:100%;font-size:10px}.beatGrid{gap:25px 11px}.coverIndex{top:10px;left:10px;font-size:7px}.coverGenre{top:10px;right:8px;font-size:7px}.coverTitle{font-size:clamp(15px,4.5vw,25px);left:11px;bottom:12px}.playButton{width:39px;height:39px}.beatInfo{align-items:start}.beatInfo h3{font-size:11px}.beatInfo p{font-size:8px}.beatInfo strong{font-size:10px}.beatBottom{font-size:9px}.beatBottom button{font-size:9px;gap:2px}.licenseQuick{align-items:stretch;flex-direction:column}.licenseQuick select{max-width:none;width:100%}.licenseQuick button{text-align:left;padding:5px 0}.manifesto{grid-template-columns:1fr;gap:15px;padding:48px 5%}.manifestoMark{font-size:75px}.manifesto h2{font-size:31px}.manifesto p:not(.eyebrow){font-size:13px}.licenseGrid{grid-template-columns:1fr 1fr;gap:9px}.licenseCard{padding:15px 12px;min-height:350px}.licenseCard h3{font-size:13px;margin-top:25px}.licensePrice{font-size:20px}.licenseCard li{font-size:10px;gap:6px}.licenseCard ul{gap:11px}.licenseCard .primary,.licenseCard .secondary{font-size:9px;gap:5px}.licenseFine{font-size:8px}.contactSection{grid-template-columns:1fr;gap:35px;padding:58px 5%}.footer{padding:30px 5% 17px}.footerBottom{flex-wrap:wrap;line-height:1.6}.footerBottom span:nth-child(2){display:none}.cartDrawer{padding:22px}.ticker{font-size:11px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;scroll-behavior:auto!important;transition:none!important}}
+
+
+.bottomPlayer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 25;
+  min-height: 92px;
+  padding: 12px 4%;
+  background: #111113f5;
+  border-top: 1px solid #d7fb52;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  backdrop-filter: blur(18px);
+}
+
+.playerArtwork {
+  width: 58px;
+  height: 58px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  color: #d7fb52;
+  font-weight: 700;
+  border: 1px solid #ffffff33;
+}
+
+.playerTrack {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 120px;
+}
+
+.playerTrack strong {
+  font-size: 12px;
+}
+
+.playerTrack span,
+.playerVolume span {
+  color: #aaa;
+  font-size: 10px;
+}
+
+.playerControls {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.playerControls button {
+  border: 0;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  color: #111;
+  background: #d7fb52;
+  font-size: 17px;
+}
+
+.playerProgress {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: min(100%, 420px);
+}
+
+.playerProgress span {
+  color: #aaa;
+  font: 10px monospace;
+}
+
+.playerProgress input,
+.playerVolume input {
+  accent-color: #d7fb52;
+  cursor: pointer;
+}
+
+.playerProgress input {
+  flex: 1;
+  min-width: 40px;
+}
+
+.playerVolume {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.playerVolume input {
+  width: 85px;
+}
+
+.playerClose {
+  border: 0;
+  background: transparent;
+  color: #aaa;
+  font-size: 25px;
+}
+
+@media (max-width: 650px) {
+  .bottomPlayer {
+    gap: 9px;
+    padding: 10px;
+    flex-wrap: wrap;
+  }
+
+  .playerArtwork {
+    width: 44px;
+    height: 44px;
+  }
+
+  .playerTrack {
+    min-width: 0;
+    flex: 1;
+  }
+
+  .playerControls {
+    order: 3;
+    flex-basis: 100%;
+  }
+
+  .playerVolume {
+    gap: 4px;
+  }
+
+  .playerVolume input {
+    width: 55px;
+  }
+}
+
+body:has(.bottomPlayer) {
+  padding-bottom: 110px;
+}
+
+
+.beatCoverImage {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  transition: transform 0.4s ease;
+}
+
+.beatCard:hover .beatCoverImage {
+  transform: scale(1.04);
+}
+
+.coverIndex,
+.coverGenre,
+.coverTitle,
+.playButton {
+  z-index: 2;
+}
+
+.playerArtwork {
+  position: relative;
+  overflow: hidden;
+}
+
+.playerArtwork img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  inset: 0;
+}
+
+.playerArtwork span {
+  position: relative;
+  z-index: 1;
+  text-shadow: 0 1px 5px #000;
+}
+
+
+/* Catalog card polish: larger artwork and restrained urban hover treatment. */
+.beatGrid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 38px 24px;
+}
+
+.beatCard {
+  min-width: 0;
+  padding: 10px;
+  border: 1px solid #2b2a2d;
+  background: linear-gradient(155deg, #171719 0%, #101012 72%);
+  box-shadow: 0 12px 30px #0003;
+  transition: border-color 220ms ease, transform 220ms ease, box-shadow 220ms ease;
+}
+
+.beatCard:hover {
+  transform: translateY(-5px);
+  border-color: #d7fb5280;
+  box-shadow: 0 20px 48px #0008, 0 0 24px #d7fb5210;
+}
+
+.cover {
+  aspect-ratio: 1 / 1;
+  background-color: #18181b;
+  isolation: isolate;
+}
+
+.cover:before {
+  z-index: 1;
+  background: linear-gradient(180deg, #07070818 25%, #07070808 42%, #070708bf 100%);
+  transition: opacity 220ms ease;
+}
+
+.beatCard:hover .cover:before { opacity: .82; }
+
+.beatCoverImage {
+  transition: transform 500ms cubic-bezier(.2,.7,.2,1), filter 300ms ease;
+}
+
+.beatCard:hover .beatCoverImage {
+  transform: scale(1.07);
+  filter: saturate(1.08) contrast(1.04);
+}
+
+.playButton {
+  width: 58px;
+  height: 58px;
+  opacity: .88;
+  transform: scale(.94);
+  transition: transform 220ms ease, opacity 220ms ease, background 220ms ease, color 220ms ease;
+}
+
+.beatCard:hover .playButton,
+.playButton:focus-visible {
+  opacity: 1;
+  transform: scale(1);
+  background: var(--lime);
+  color: #111;
+  border-color: var(--lime);
+}
+
+.beatInfo { padding: 17px 5px 13px; }
+.beatBottom, .licenseQuick { margin-inline: 5px; }
+.beatBottom { padding-top: 13px; }
+.licenseQuick { padding-bottom: 5px; }
+
+@media (min-width: 1500px) {
+  .beatGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 900px) {
+  .beatGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 25px 14px; }
+}
+
+@media (max-width: 620px) {
+  .beatGrid { grid-template-columns: minmax(0, 1fr); gap: 22px; }
+  .beatCard { padding: 8px; }
+  .playButton { width: 50px; height: 50px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .beatCard, .beatCoverImage, .playButton, .cover:before { transition: none !important; }
+  .beatCard:hover, .beatCard:hover .beatCoverImage, .beatCard:hover .playButton { transform: none; }
+}
+
+/* License and cart refinements */
+.licenseGrid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 12px;
+}
+.licenseCard.exclusiveCard {
+  border-color: #9a4545;
+  background: linear-gradient(155deg, #2a1719, #111113 55%);
+}
+.licenseCard.exclusiveCard .licensePrice { color: #f0c0c0; }
+.licenseQuick { align-items: stretch; }
+.licenseQuick select { max-width: none; min-width: 0; flex: 1; }
+.licenseQuick .addLicenseButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 9px 10px;
+  border: 1px solid var(--lime);
+  background: var(--lime);
+  color: #111;
+  font-size: 10px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.selectedLicensePrice { color: var(--lime); font-size: 9px; text-align: right; }
+.cartItemInfo span { overflow-wrap: anywhere; }
+@media (max-width: 1200px) {
+  .licenseGrid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .licenseGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .licenseGrid { grid-template-columns: minmax(0, 1fr); }
+  .licenseQuick { flex-direction: row; align-items: stretch; }
+  .licenseQuick select { width: auto; flex: 1; }
+  .licenseQuick .addLicenseButton { font-size: 9px; }
+}
+
+
+/* ===== JAN BEAT STORE: LICENCIAS EN HORIZONTAL ===== */
+
+.licenseOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(8px);
+}
+
+.licenseModal {
+  position: relative;
+  width: min(1250px, 96vw);
+  max-height: 90vh;
+  overflow-y: auto;
+  padding: 28px;
+  background: #10141d;
+  color: #f5f7fc;
+  border: 1px solid #303b50;
+  box-shadow: 0 25px 100px #000b;
+}
+
+.licenseModalRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  gap: 14px;
+  width: 100%;
+  overflow-x: auto;
+  padding: 8px 2px 18px;
+}
+
+.licenseOption {
+  box-sizing: border-box;
+  flex: 1 0 190px;
+  min-width: 190px;
+  max-width: 240px;
+  display: flex;
+  flex-direction: column;
+  padding: 18px 15px;
+  background: #171d29;
+  border: 1px solid #303b50;
+}
+
+.licenseOption.popular {
+  border-color: #397dff;
+}
+
+.licenseOptionIndex {
+  color: #75a5ff;
+  font-size: 10px;
+}
+
+.licenseOption h3 {
+  margin: 22px 0 10px;
+  font-size: 14px;
+}
+
+.licenseOption .licensePrice {
+  color: #75a5ff;
+  font-size: 23px;
+}
+
+.licenseOption ul {
+  list-style: none;
+  padding: 0;
+  margin: 18px 0;
+  display: grid;
+  gap: 12px;
+  flex: 1;
+}
+
+.licenseOption li {
+  color: #c0c8d6;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.licenseOption li::before {
+  content: "↗ ";
+  color: #75a5ff;
+}
+
+.licenseOption button {
+  width: 100%;
+  margin-top: auto;
+}
+
+.licenseModal .primary,
+.licenseQuick .addLicenseButton {
+  background: #397dff;
+  border-color: #397dff;
+  color: #fff;
+}
+
+@media (max-width: 1100px) {
+  .licenseOption {
+    flex: 0 0 205px;
+    min-width: 205px;
+  }
+}
+
+@media (max-width: 620px) {
+  .licenseOverlay {
+    padding: 10px;
+  }
+
+  .licenseModal {
+    width: 100%;
+    max-height: 92vh;
+    padding: 16px;
+  }
+
+  .licenseOption {
+    flex: 0 0 190px;
+    min-width: 190px;
+  }
+}
+
+
+/* ===== JAN BEAT STORE — TARJETAS PREMIUM ===== */
+
+/* Portadas uniformes */
+.beatCard img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* Efecto al pasar el ratón */
+.beatCard:hover img {
+  transform: scale(1.035);
+  filter: brightness(1.08);
+}
+
+/* Tarjetas */
+.beatCard {
+  overflow: hidden;
+  transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.beatCard:hover {
+  transform: translateY(-4px);
+}
+
+/* Móvil: evitar efectos excesivos */
+@media (max-width: 600px) {
+  .beatCard:hover {
+    transform: none;
+  }
+}

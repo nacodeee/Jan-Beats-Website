@@ -1,0 +1,7 @@
+JAN Beat Store — catalog update
+
+This package preserves the existing React/Vite app, including the bilingual catalog, filters, preview player, cart, and the NOS MATAMOS beat data and local asset paths.
+
+To apply it, use this folder as your project or copy its src/style.css into your project at src/style.css. The original project folder is not modified.
+
+Visual changes: two larger beat cards per row on standard desktop/tablet widths, three at very wide widths, one on phones; consistent square cover art; subtle lime border, lift, shadow, and cover zoom on hover; visible focus styling; reduced-motion support.
