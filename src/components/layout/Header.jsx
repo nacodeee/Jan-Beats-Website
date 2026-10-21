@@ -1,4 +1,4 @@
-import { ShoppingBag, Globe2, Menu } from 'lucide-react';
+import { ShoppingBag, Globe as Globe2, Menu } from 'lucide-react';
 import { useLang } from '../../context/LangContext';
 import { useCart } from '../../context/CartContext';
 import { useState } from 'react';

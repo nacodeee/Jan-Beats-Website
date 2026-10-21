@@ -1,4 +1,4 @@
-import { UploadCloud } from 'lucide-react';
+import { CloudUpload as UploadCloud } from 'lucide-react';
 import { useState, useRef, useCallback } from 'react';
 
 export function FileDropzone({ onFile, accept, label, hint, preview }) {
